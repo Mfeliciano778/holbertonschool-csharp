@@ -8,7 +8,7 @@ namespace _5_print_comb
         {
             for (int i = 0; i < 99; i++)
             {
-                Console.Write("{00}, ", i);
+                Console.Write("{0:d2}, ", i);
             }
             Console.WriteLine("99");
         }
