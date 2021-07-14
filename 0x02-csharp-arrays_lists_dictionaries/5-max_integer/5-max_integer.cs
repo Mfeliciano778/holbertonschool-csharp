@@ -7,13 +7,8 @@ class List
     {
         if (myList.Count > 0)
         {
-            int max = 0;
-            for (int index = 0; index < myList.Count; index++)
-            {
-                if (myList[index] > max)
-                    max = myList[index];
-            }
-            return max;
+            myList.Sort();
+            return myList[myList.Count - 1];
         }
         Console.WriteLine("List is empty");
         return -1;
