@@ -15,8 +15,8 @@ class List
         for (int index = 0; index < size; index++)
         {
             newList.Add(index);
-            Console.Write(index < size - 1 ? newList[index] + " " : newList[index] + "\n");
         }
+        Console.WriteLine("{0}", string.Join(" ", newList));
         return newList;
     }
 }
