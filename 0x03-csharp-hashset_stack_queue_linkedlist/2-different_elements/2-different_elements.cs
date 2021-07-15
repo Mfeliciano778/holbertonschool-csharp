@@ -13,6 +13,8 @@ using System.Collections.Generic;
             foreach (int item in firstList)
                 newList.Add(item);
 
+            newList.Sort();
+
             return newList;
         }
     }
