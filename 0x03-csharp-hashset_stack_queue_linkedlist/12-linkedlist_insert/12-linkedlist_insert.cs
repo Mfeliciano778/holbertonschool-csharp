@@ -5,11 +5,11 @@ class LList
     public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
     {
         LinkedListNode<int> currNode = myLList.First;
-        while (currNode.Next != null)
+        while (currNode != null)
         {
-            if (n < currNode.Next.Value)
+            if (n < currNode.Value)
             {
-                currNode = myLList.AddAfter(currNode, n);
+                currNode = myLList.AddBefore(currNode, n);
                 return currNode;
             }
             currNode = currNode.Next;
