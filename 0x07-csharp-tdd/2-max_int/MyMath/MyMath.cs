@@ -13,7 +13,7 @@ namespace MyMath
         {
             if (nums.Count == 0)
                 return (0);
-            int max = nums [0];
+            int max = nums[0];
             foreach (int index in nums)
             {
                 if (index > max)
