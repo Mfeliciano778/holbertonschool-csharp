@@ -28,7 +28,7 @@ namespace MyMath
             }
             catch (System.DivideByZeroException)
             {
-                Console.WriteLine("Num Cannot be 0");
+                Console.WriteLine("Num cannot be 0");
                 return (null);
             }
         }
