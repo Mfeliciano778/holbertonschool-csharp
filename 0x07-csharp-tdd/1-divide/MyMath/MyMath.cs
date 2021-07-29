@@ -7,7 +7,7 @@ namespace MyMath
     {
         /// <summary> A method called Divide method that divideds a matrix</summary>
         /// <param name="matrix"> The matrix </param>
-        /// <param name="num"> The number to divide by </param>\
+        /// <param name="num"> The number to divide by </param>
         /// <returns> New matrix divided by a number </returns>
         public static int[,] Divide(int[,] matrix, int num)
         {
@@ -24,7 +24,6 @@ namespace MyMath
                         sumMatrix[i, j] = matrix[i, j] / num;
                     }
                 }
-                Console.WriteLine(sumMatrix);
                 return (sumMatrix);
             }
             catch (System.DivideByZeroException)
