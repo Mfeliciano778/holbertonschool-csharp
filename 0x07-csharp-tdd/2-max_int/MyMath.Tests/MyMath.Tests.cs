@@ -41,5 +41,25 @@ namespace MyMath.Tests
 
             Assert.AreEqual(maxNum, exampleOutput);
         }
+
+        [Test]
+        public void Test4()
+        {
+            List<int> list = new List<int>() {0, -1, -2, -3, -4, -5};
+            int maxNum = Operations.Max(list);
+            int exampleOutput = 0;
+
+            Assert.AreEqual(maxNum, exampleOutput);
+        }
+
+        [Test]
+        public void Test5()
+        {
+            List<int> list = new List<int>() {4, 3, 5, 2, 1, 0};
+            int maxNum = Operations.Max(list);
+            int exampleOutput = 5;
+
+            Assert.AreEqual(maxNum, exampleOutput);
+        }
     }
 }
