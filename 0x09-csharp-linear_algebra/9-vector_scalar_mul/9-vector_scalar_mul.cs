@@ -16,7 +16,7 @@ class VectorMath
         double[] sum = new double[vector.GetLength(0)];
 
          for(int index = 0; index < vector.GetLength(0); index++)
-            sum[index] = vector[index] + scalar;
+            sum[index] = vector[index] * scalar;
         return (sum);
     }
 }
