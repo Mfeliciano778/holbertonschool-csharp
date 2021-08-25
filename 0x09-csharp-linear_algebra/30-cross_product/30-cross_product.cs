@@ -14,10 +14,6 @@ class MatrixMath
         if (vector1.GetLength(0) != 3 || vector2.GetLength(0) != 3)
             return (err);
 
-        double[] xproduct = {vector1[1] * vector2[2] - vector1[2] * vector2[1],
-                             vector1[2] * vector2[0] - vector1[0] * vector2[2],
-                             vector1[0] * vector2[1] - vector1[1] * vector2[0]
-                            };
-        return (xproduct);
+        return new double[3] {vector1[1] * vector2[2] - vector1[2] * vector2[1], vector1[2] * vector2[0] - vector1[0] * vector2[2], vector1[0] * vector2[1] - vector1[1] * vector2[0]};
     }
 }
