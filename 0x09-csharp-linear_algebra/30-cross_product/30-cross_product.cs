@@ -1,7 +1,7 @@
 ﻿using System;
 
 /// <summary> A class containing a public method called CrossProduct </summary>
-class MatrixMath
+class VectorMath
 {
     /// <summary> To find the cross product of two vectors </summary>
     /// <param name="vector1">The first vector</param>
