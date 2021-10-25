@@ -45,15 +45,13 @@ class Queue<T>
 
     public T Dequeue()
     {
-        T Temp;
-
         if (head == null)
         {
             System.Console.WriteLine("Queue is empty");
             return default(T);
         }
 
-        Temp = head.value;
+        T Temp = head.value;
         head = head.next;
         count--;
         return Temp;
