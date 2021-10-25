@@ -58,12 +58,12 @@ class Queue<T>
     public void Enqueue(T val)
     {
         Node newNode = new Node(val);
-        if (count == 0)
+        if (head == null)
         {
             head = newNode;
         } else
         {
-            newNode.next = null;
+            tail.next = newNode;
         }
         tail = newNode;
         count++;
