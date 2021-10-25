@@ -61,12 +61,11 @@ class Queue<T>
         if (count == 0)
         {
             head = newNode;
-            newNode.next = tail;
         } else
         {
-            tail = newNode;
             newNode.next = null;
         }
+        tail = newNode;
         count++;
     }
 
