@@ -52,7 +52,7 @@ class Queue<T>
 
         T Temp = head.value;
         head = head.next;
-        count--;
+        count -= 1;
         return Temp;
     }
 }
