@@ -16,15 +16,15 @@ class Queue<T>
         public T value = default(T);
         public Node next = null;
 
-        public void contructor(T t)
+        public Node(T t)
         {
             value = t;
         }
     }
 
-    public void Enqueue(T value)
+    public void Enqueue(T val)
     {
-        Node newNode = new Node();
+        Node newNode = new Node(val);
         if (count == 0)
         {
             head = newNode;
@@ -34,7 +34,6 @@ class Queue<T>
             tail = newNode;
             newNode.next = null;
         }
-        newNode.value = value;
         count++;
     }
 
