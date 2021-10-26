@@ -47,15 +47,15 @@ class Decoration : Base, IInteractive, IBreakable
     public bool isQuestItem;
     public int durability { set; get; }
 
-    public Decoration(string Name = "Decoration", int Durable = 1, bool Item = false)
+    public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
     {
-        if (Durable <= 0)
+        if (durability <= 0)
         {
             throw new Exception("Durability must be greater than 0");
         }
-        this.name = Name;
-        this.durability = Durable;
-        this.isQuestItem = Item;
+        this.name = name;
+        this.durability = durability;
+        this.isQuestItem = isQuestItem;
     }
 
     public void Interact()
