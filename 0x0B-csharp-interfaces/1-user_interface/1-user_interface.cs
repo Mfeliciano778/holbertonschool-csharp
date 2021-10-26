@@ -34,18 +34,15 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
     public int durability { get; set; }
     public bool isCollected { get; set; }
 
-    void IInteractive.Interact()
+    public void Interact()
     {
-        return;
     }
 
-    void IBreakable.Break()
+    public void Break()
     {
-        return;
     }
 
-    void ICollectable.Collect()
+    public void Collect()
     {
-        return;
     }
 }
