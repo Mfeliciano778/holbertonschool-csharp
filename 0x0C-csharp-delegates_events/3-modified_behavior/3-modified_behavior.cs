@@ -75,7 +75,7 @@ public class Player
     /// </summary>
     /// <param name="damage"> Amount of damage taken </param>
     /// <returns> Nothing yet </returns>
-    public delegate int CalculateHealth(float damage);
+    public delegate void CalculateHealth(float damage);
 
     /// <summary>
     /// Prints the amount of damage taken
@@ -86,7 +86,10 @@ public class Player
         float newHp;
 
         if (damage < 0)
+        {
+            damage = 0;
             System.Console.WriteLine($"{name} takes 0 damage!");
+        }
         else
         {
             System.Console.WriteLine($"{name} takes {damage} damage!");   
@@ -104,7 +107,10 @@ public class Player
         float newHp;
 
         if (heal < 0)
+        {
+            heal = 0;
             System.Console.WriteLine($"{name} heals 0 HP!");
+        }
         else
         {
             System.Console.WriteLine($"{name} heals {heal} HP!");
